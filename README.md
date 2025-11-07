@@ -7,12 +7,12 @@ It helps you **add, view, and reset your income and expense entries** — with l
 
 ## 🚀 Features
 
-✅ Add income and expense records easily  
-✅ Automatically calculates **Total Income, Total Expense, and Balance**  
-✅ Clean and minimal **desktop and mobile responsive UI**  
-✅ Reset button to clear all records  
-✅ Instant updates using **DOM manipulation (JavaScript)**  
-✅ Works fully in the browser (no database needed)
+ Add income and expense records easily  
+ Automatically calculates **Total Income, Total Expense, and Balance**  
+ Clean and minimal **desktop and mobile responsive UI**  
+ Reset button to clear all records  
+ Instant updates using **DOM manipulation (JavaScript)**  
+ Works fully in the browser (no database needed)
 
 ---
 
