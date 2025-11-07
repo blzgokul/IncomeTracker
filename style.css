@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0e8ff, #f4e9ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
+h1 {
+  color: #5e2ced;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #f9f9ff;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+#totalIncome {
+  color: green;
+  font-weight: bold;
+}
+
+#totalExpense {
+  color: red;
+  font-weight: bold;
+}
+
+#balance {
+  color: blue;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input,
+form select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#addBtn {
+  background: #5e2ced;
+  color: #fff;
+}
+
+#resetBtn {
+  background: red;
+  color: #fff;
+}
+
+.filters {
+  margin: 15px 0;
+}
+
+.filters label {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  border-left: 5px solid;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.income {
+  border-color: green;
+}
+
+li.expense {
+  border-color: red;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button:hover {
+  opacity: 0.7;
+}
+
+/* Simple mobile-only fix — keep desktop card look, centered and neat */
+@media (max-width:600px){
+  html,body{margin:0;padding:0;width:100%;}
+  *{box-sizing:border-box;}
+
+  .container{
+    width: 92%;
+    max-width: 380px;    /* adjust to your desktop card width */
+    margin:18px auto;
+    padding:30px;
+    border-radius:16px;
+    background:#fff;
+    box-shadow:0 8px 24px rgba(10,20,40,0.08);
+    text-align:center;
+    overflow:auto;
+    max-height:calc(100vh - 36px);
+  }
+
+  .container h1{font-size:22px;margin:6px 0;color:#5b2cff;}
+  .summary{display:flex;flex-direction:column;gap:12px;margin-top:10px;}
+  .summary-box{padding:12px;border-radius:12px;background:#f6f7fb;}
+  .inputs .row{display:flex;gap:10px;flex-wrap:wrap; align-items: center;}
+  .inputs .row > *{flex:1 1 100%;min-width:100px; align-items: center;}
+  .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px;}
+  .buttons button{min-width:100px;padding:10px 14px;border-radius:10px;font-weight:700;white-space:nowrap}
+  .filters{min-width: 40px; display: flex;}
+
+}
